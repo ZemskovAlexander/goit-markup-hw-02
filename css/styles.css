@@ -1,0 +1,30 @@
+.page {
+    color: #212121;
+    background-color: #FFFFFF;
+}
+ul {
+    list-style: none;
+}
+/* цвет основного текста #212121 */
+/* цвет вторичного текста #757575 */
+
+/* бэкграунд #E5E5E5 */
+/* бэкграунд вторичный #F5F4FA */
+
+/* акцент #2196F3 */
+.logo {
+    color: #2196F3;
+}
+/* Site nav */
+.site-nav {
+    color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: #2196F3;
+}
+
+/* Section */
+.section-title {
+    color: #FFFFFF;
+}
