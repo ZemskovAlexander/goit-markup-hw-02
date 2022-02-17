@@ -1,9 +1,15 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+}
+
 .page {
-    color: #212121;
-    background-color: #FFFFFF;
+  color: #212121;
+  background-color: #ffffff;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 /* цвет основного текста #212121 */
 /* цвет вторичного текста #757575 */
@@ -13,18 +19,33 @@ ul {
 
 /* акцент #2196F3 */
 .logo {
-    color: #2196F3;
+  color: #2196f3;
 }
 /* Site nav */
-.site-nav {
-    color: #212121;
+.site-nav .link {
+  color: #212121;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: #2196F3;
+  color: #2196f3;
+}
+
+.contact-nav .contact {
+  color: #757575;
+}
+.contact-nav .contact:hover,
+.contact-nav .contact:focus {
+  color: #2196f3;
 }
 
 /* Section */
+
 .section-title {
-    color: #FFFFFF;
+  color: #212121;
+}
+
+/* Features */
+
+.feature-list .title {
+  color: #757575;
 }
