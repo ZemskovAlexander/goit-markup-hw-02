@@ -2,11 +2,12 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --primary-bg-color: #ffffff
 }
 
 .page {
-  color: #212121;
-  background-color: #ffffff;
+  color:var(--title-text-color),
+  background-color: var(--primary-bg-color)
 }
 ul {
   list-style: none;
@@ -19,33 +20,54 @@ ul {
 
 /* акцент #2196F3 */
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* Site nav */
 .site-nav .link {
-  color: #212121;
+  color: var(--title-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .contact-nav .contact {
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .contact-nav .contact:hover,
 .contact-nav .contact:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Section */
 
 .section-title {
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 /* Features */
 
 .feature-list .title {
-  color: #757575;
+  color: var(--primary-text-color);
+}
+
+/* Team */
+
+.team {
+    color: var(--title-text-color);
+}
+.position {
+    color: var(--primary-text-color);
+}
+
+/* Button */
+
+.button{
+    color: var(--title-text-color);
+    background-color: var(--primary-bg-color);
+}
+.button.primary {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+    border-color: transparent;
 }
