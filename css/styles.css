@@ -29,6 +29,14 @@ ul {
   line-height: 0.83;
   letter-spacing: 0.03em;
 }
+.logo .logo-sc {
+  color: var(--title-text-color);
+}
+.logo .logo-footer {
+  color: var(--primary-bg-color);
+  background-color: var(--hero-bg-color);
+}
+
 /* Site nav */
 .site-nav .link {
   color: var(--title-text-color);
@@ -57,19 +65,13 @@ ul {
 .hero-title {
   color: var(--primary-bg-color);
   background-color: var(--hero-bg-color);
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
-
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Section */
@@ -138,6 +140,7 @@ ul {
 /* Фильтр */
 
 .menu .button-menu {
+  cursor: pointer;
   color: var(--title-text-color);
   background-color: var(--button-bg-color);
   letter-spacing: 0.03em;
@@ -147,4 +150,12 @@ ul {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
   border-color: transparent;
+}
+
+.adress-geo {
+  color: var(--primary-bg-color);
+  background-color: var(--hero-bg-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
