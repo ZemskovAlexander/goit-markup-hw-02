@@ -15,15 +15,13 @@
 ul {
   list-style: none;
 }
-/* цвет основного текста #212121 */
-/* цвет вторичного текста #757575 */
+a {
+  text-decoration: none;
+}
 
-/* бэкграунд #E5E5E5 */
-/* бэкграунд вторичный #F5F4FA */
-
-/* акцент #2196F3 */
 .logo {
   color: var(--accent-color);
+  background-color: var(--primary-bg-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 0.83;
@@ -45,19 +43,24 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.site-nav .page {
+  color: var(--accent-color);
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
 
 .contact-nav .contact {
-  color: var(--primary-text-color);
+  color: var(--primary-bg-color);
+  background-color: var(--hero-bg-color);
   font-size: 14px;
   line-height: 1.14px;
 }
 .contact-nav .contact:hover,
 .contact-nav .contact:focus {
-  color: var(--accent-color);
+  color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.14px;
 }
@@ -83,6 +86,15 @@ ul {
   text-align: center;
 }
 
+.team,
+.position {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 /* Features */
 
 .section-title {
@@ -90,10 +102,9 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
-.feature-list .title {
+.section .feature-list .title {
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: normal;
@@ -104,9 +115,6 @@ ul {
 
 /* Team */
 
-.team {
-  color: var(--title-text-color);
-}
 .position {
   color: var(--primary-text-color);
 }
@@ -117,15 +125,34 @@ ul {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
 }
-.button-primary {
+.button-top {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
-  font-style: normal;
-  font-weight: bold;
+
+  font-family: inherit;
+  width: 136px;
+  height: 30px;
+  left: 732px;
+  top: 440px;
+
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.8;
+  display: flex;
+  text-align: center;
   letter-spacing: 0.06em;
-  border-color: transparent;
+}
+
+.logo-ft {
+  color: var(--accent-color);
+  background-color: var(--hero-bg-color);
+}
+
+.logo .logo-sc {
+  color: var(--title-text-color);
+}
+.logo .logo-footer {
+  color: var(--primary-bg-color);
+  background-color: var(--hero-bg-color);
 }
 /* Страница портфолио */
 
