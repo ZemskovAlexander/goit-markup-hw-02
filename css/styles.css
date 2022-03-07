@@ -65,16 +65,32 @@ a {
   line-height: 1.14px;
 }
 
+.contact-top .contact {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  font-size: 14px;
+  line-height: 1.14px;
+}
+.contact-top .contact:hover,
+.contact-top .contact:focus {
+  color: var(--accent-color);
+  font-size: 14px;
+  line-height: 1.14px;
+}
+
 .hero-title {
   color: var(--primary-bg-color);
   background-color: var(--hero-bg-color);
-  font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
 
   text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+}
+
+.hero,
+.hero-title,
+.button-top {
+  background-color: var(--hero-bg-color);
 }
 
 /* Section */
@@ -125,35 +141,59 @@ a {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
 }
+
+.hero {
+  background-color: var(--hero-bg-color);
+  text-align: center;
+}
 .button-top {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
 
   font-family: inherit;
-  width: 136px;
-  height: 30px;
   left: 732px;
-  top: 440px;
+
+  display: inline-block;
 
   font-size: 16px;
   line-height: 1.8;
   display: flex;
   text-align: center;
   letter-spacing: 0.06em;
+  position: absolute;
 }
 
 .logo-ft {
   color: var(--accent-color);
   background-color: var(--hero-bg-color);
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 0.83;
+  letter-spacing: 0.03em;
 }
 
 .logo .logo-sc {
   color: var(--title-text-color);
 }
-.logo .logo-footer {
+.logo-ft .logo-footer {
   color: var(--primary-bg-color);
   background-color: var(--hero-bg-color);
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 0.83;
+  letter-spacing: 0.03em;
 }
+
+.section-aboutus {
+  background-color: var(--button-bg-color);
+}
+
+footer {
+  background-color: var(--hero-bg-color);
+}
+
 /* Страница портфолио */
 
 /* Шапка */
@@ -170,8 +210,29 @@ a {
   cursor: pointer;
   color: var(--title-text-color);
   background-color: var(--button-bg-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
   letter-spacing: 0.03em;
 }
+
+.button-first {
+  cursor: pointer;
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 .menu .button-menu:hover,
 .menu .button-menu:focus {
   color: var(--primary-bg-color);
