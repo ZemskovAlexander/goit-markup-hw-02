@@ -15,10 +15,14 @@
 ul {
   list-style: none;
 }
+.list {
+  padding: 0;
+  margin: 0;
+}
 a {
   text-decoration: none;
 }
-
+/* Logo */
 .logo {
   color: var(--accent-color);
   background-color: var(--primary-bg-color);
@@ -51,6 +55,7 @@ a {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+/* Contact */
 
 .contact-nav .contact {
   color: var(--primary-bg-color);
@@ -78,22 +83,28 @@ a {
   line-height: 1.14px;
 }
 
-.hero-title {
+.hero {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40;
   color: var(--primary-bg-color);
   background-color: var(--hero-bg-color);
   font-size: 44px;
-
-  text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
-.hero,
-.hero-title,
-.button-top {
-  background-color: var(--hero-bg-color);
+.container {
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 /* Section */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .section-team {
   color: var(--title-text-color);
@@ -102,33 +113,48 @@ a {
   text-align: center;
 }
 
-.team,
+/* .team,
 .position {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  letter-spacing: 0.03em;
-}
+  letter-spacing: 0.03em; */
 
 /* Features */
 
-.section-title {
-  color: var(--title-text-color);
+.section-title .title {
+  /* display: inline; */
+  margin-bottom: 94;
+  margin-top: 0;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.section .feature-list .title {
+.feature-list .title {
   color: var(--primary-text-color);
+  margin-bottom: 10;
+  margin-top: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  margin-bottom: 0;
+  margin-top: 94px;
+}
 
+.feature-list p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 /* Team */
 
 .position {
@@ -137,35 +163,13 @@ a {
 
 /* Button */
 
-.button {
+/* .button {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
-}
-
-.hero {
-  background-color: var(--hero-bg-color);
-  text-align: center;
-}
-.button-top {
-  color: var(--primary-bg-color);
-  background-color: var(--accent-color);
-
-  font-family: inherit;
-  left: 732px;
-
-  display: inline-block;
-
-  font-size: 16px;
-  line-height: 1.8;
-  display: flex;
-  text-align: center;
-  letter-spacing: 0.06em;
-  position: absolute;
-}
+} */
 
 .logo-ft {
   color: var(--accent-color);
-  background-color: var(--hero-bg-color);
 
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -178,7 +182,6 @@ a {
 }
 .logo-ft .logo-footer {
   color: var(--primary-bg-color);
-  background-color: var(--hero-bg-color);
 
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -211,26 +214,47 @@ footer {
   color: var(--title-text-color);
   background-color: var(--button-bg-color);
 
-  font-family: Roboto;
+  /* font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03em; */
 }
 
 .button-first {
   cursor: pointer;
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
-  font-family: Roboto;
+  /* font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03em; */
+}
+
+.hero button {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.8;
+
+  letter-spacing: 0.06em;
+}
+
+.button-top:hover,
+.button-top:focus {
+  color: var(--primary-bg-color);
+  background-color: #188ce8;
+  border-color: transparent;
 }
 
 .menu .button-menu:hover,
@@ -238,6 +262,28 @@ footer {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
   border-color: transparent;
+}
+
+.works .team {
+  color: var(--title-text-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.7;
+  /* text-align: center; */
+
+  letter-spacing: 0.06em;
+}
+
+.works p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  /* text-align: center; */
+
+  letter-spacing: 0.03em;
 }
 
 .adress-geo {
